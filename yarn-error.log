@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/local/bin/node /Users/marvin/.yarn/bin/yarn.js run field-extract
+
+PATH: 
+  /usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/marvin/.cargo/bin:/Users/marvin/.yarn/bin:/Users/marvin/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/marvin/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/apache-maven-3.5.2/bin:/usr/local/go/bin:/Users/marvin/opt/local/bin:/usr/local/share/dotnet:/Users/marvin/Library/Android/sdk:/Users/marvin/Library/Android/sdk/tools:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/gcc_arm/gcc-arm-none-eabi-7-2017-q4-major/bin/:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "kfdw-importer",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "field-extract": "node src/field-extractor.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c node src/field-extractor.js
+  Directory: /Users/marvin/Documents/kfdw-importer
+  Output:
+  
+      at ProcessTermError.MessageError (/Users/marvin/.yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/Users/marvin/.yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/Users/marvin/.yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
