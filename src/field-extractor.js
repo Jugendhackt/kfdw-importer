@@ -5,10 +5,10 @@ pretty.prettify('data/input.json', 'data/out/pretty.json')
 
 const fileName = 'data/out/pretty.json'
 const file = fs.readFileSync(fileName, null, 2)
-const json = JSON.parse(file)
+let json = JSON.parse(file)
 
-let numberOfParentNodes = 0
-for(var item in json) {
-  numberOfParentNodes++;
+for (let i = 0; i < json.length; i++) {
+  json[i].data = JSON.parse(json[i].data);
 }
-console.log(`Nodes: ${numberOfParentNodes}`)
+
+fs.writeFileSync('data/out/computed.json', JSON.stringify(json, null, 2));
