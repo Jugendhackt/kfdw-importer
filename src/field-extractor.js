@@ -12,3 +12,7 @@ for (let i = 0; i < json.length; i++) {
 }
 
 fs.writeFileSync('data/out/computed.json', JSON.stringify(json, null, 2));
+
+
+console.log("Statistics:")
+console.log(`Nodes: ${json.length}`)
